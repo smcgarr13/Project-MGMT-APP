@@ -12,6 +12,7 @@ const app = express();
 // Connect to database
 connectDB();
 
+// Enable CORS middleware
 app.use(cors());
 
 app.use('/graphql', graphqlHTTP({
