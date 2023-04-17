@@ -1,5 +1,5 @@
 import { useState } from 'react';
-// import { faUser } from 'react-icons/fa';
+import { FaUser } from 'react-icons/fa';
 import { useMutation } from '@apollo/client';
 import { ADD_CLIENT } from '../mutations/clientMutations';
 import { GET_CLIENTS } from '../queries/clientQueries';
@@ -43,6 +43,7 @@ export default function AddClientModal() {
             data-bs-target='#addClientModal'
         >
             <div className='d-flex align-items-center'>
+              <FaUser className='icon' />
               <div>Add Client</div>  
             </div>
         </button>
